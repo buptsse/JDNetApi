@@ -10,6 +10,7 @@
 
 #import "JDNetAPIManager.h"
 #import "BKCardModel.h"
+#import "BKCardResponseModel.h"
 
 @interface ViewController ()
 
@@ -37,7 +38,7 @@
     model.bk_length = @"600";
     
     
-    [[JDNetAPIManager manager] GET:@"/api/openapi/BaikeLemmaCardApi" requestModel:model responseModel:nil success:^(NSURLSessionDataTask *task, JDNetResponseModel *responseModel) {
+    [[JDNetAPIManager manager] GET:@"/api/openapi/BaikeLemmaCardApi" requestModel:model responseModel:[BKCardResponseModel new] success:^(NSURLSessionDataTask *task, JDNetResponseModel *responseModel) {
         NSLog(@"success");
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"fail");

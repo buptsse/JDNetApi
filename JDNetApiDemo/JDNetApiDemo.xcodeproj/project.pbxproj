@@ -34,6 +34,7 @@
 		479416591DB4F82D00B524FA /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 479416561DB4F82D00B524FA /* YYClassInfo.m */; };
 		47D9E0431DB510EC008357C6 /* BKCardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D9E0421DB510EC008357C6 /* BKCardModel.m */; };
 		47D9E0461DB515A1008357C6 /* JDNetAPIConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D9E0451DB515A1008357C6 /* JDNetAPIConfigure.m */; };
+		47D9E0491DB5221D008357C6 /* BKCardResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D9E0481DB5221D008357C6 /* BKCardResponseModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +94,8 @@
 		47D9E0421DB510EC008357C6 /* BKCardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCardModel.m; sourceTree = "<group>"; };
 		47D9E0441DB515A1008357C6 /* JDNetAPIConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNetAPIConfigure.h; sourceTree = "<group>"; };
 		47D9E0451DB515A1008357C6 /* JDNetAPIConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNetAPIConfigure.m; sourceTree = "<group>"; };
+		47D9E0471DB5221D008357C6 /* BKCardResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCardResponseModel.h; sourceTree = "<group>"; };
+		47D9E0481DB5221D008357C6 /* BKCardResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCardResponseModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +247,8 @@
 			children = (
 				47D9E0411DB510EC008357C6 /* BKCardModel.h */,
 				47D9E0421DB510EC008357C6 /* BKCardModel.m */,
+				47D9E0471DB5221D008357C6 /* BKCardResponseModel.h */,
+				47D9E0481DB5221D008357C6 /* BKCardResponseModel.m */,
 			);
 			path = BusinessModel;
 			sourceTree = "<group>";
@@ -341,6 +346,7 @@
 				4794163C1DB4EC0100B524FA /* AFURLRequestSerialization.m in Sources */,
 				479416591DB4F82D00B524FA /* YYClassInfo.m in Sources */,
 				4794163D1DB4EC0100B524FA /* AFURLResponseSerialization.m in Sources */,
+				47D9E0491DB5221D008357C6 /* BKCardResponseModel.m in Sources */,
 				479416391DB4EC0100B524FA /* AFHTTPSessionManager.m in Sources */,
 				47D9E0461DB515A1008357C6 /* JDNetAPIConfigure.m in Sources */,
 			);
