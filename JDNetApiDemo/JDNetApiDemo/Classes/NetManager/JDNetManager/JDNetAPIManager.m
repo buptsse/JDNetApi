@@ -7,6 +7,7 @@
 //
 
 #import "JDNetAPIManager.h"
+#import "JDNetAPIConfigure.h"
 
 @implementation JDNetAPIManager
 
@@ -18,8 +19,7 @@ static JDNetAPIManager *_manager = nil;
 {
     @synchronized(self) {
         if (_manager == nil) {
-            
-            NSString *baseUrl = @"http://baike.baidu.com";
+            NSString *baseUrl = [[JDNetAPIConfigure shareInstance] baseUrl];
             _manager = [[JDNetAPIManager alloc] initWithBaseURL:[NSURL URLWithString:baseUrl]];
             _manager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
             _manager.responseSerializer = [AFHTTPResponseSerializer serializer];
@@ -46,5 +46,11 @@ static JDNetAPIManager *_manager = nil;
 
 }
 
+
+
++ (void)setManager:(JDNetAPIManager *)manager
+{
+    _manager = manager;
+}
 
 @end

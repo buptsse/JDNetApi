@@ -33,4 +33,13 @@
 
 
 
+
+
+/**
+ 设置新的Manager对象
+
+ @param manager 新构造的Manager
+ */
++ (void) setManager:(JDNetAPIManager *)manager;
+
 @end

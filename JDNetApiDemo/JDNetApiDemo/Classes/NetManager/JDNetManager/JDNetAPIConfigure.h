@@ -10,14 +10,9 @@
 
 @interface JDNetAPIConfigure : NSObject
 
+@property (nonatomic, strong) NSString *baseUrl;
+
 + (instancetype) shareInstance;
-
-/**
- 设置全局BaseUrl
-
- @param baseUrl 域名
- */
-- (void) setBaseUrl:(NSString *)baseUrl;
 
 
 /**
