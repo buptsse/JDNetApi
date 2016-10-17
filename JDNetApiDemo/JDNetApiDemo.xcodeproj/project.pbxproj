@@ -32,6 +32,8 @@
 		479416511DB4F2C600B524FA /* JDNetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 479416501DB4F2C600B524FA /* JDNetModel.m */; };
 		479416581DB4F82D00B524FA /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 479416541DB4F82D00B524FA /* NSObject+YYModel.m */; };
 		479416591DB4F82D00B524FA /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 479416561DB4F82D00B524FA /* YYClassInfo.m */; };
+		47D9E0431DB510EC008357C6 /* BKCardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D9E0421DB510EC008357C6 /* BKCardModel.m */; };
+		47D9E0461DB515A1008357C6 /* JDNetAPIConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D9E0451DB515A1008357C6 /* JDNetAPIConfigure.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +89,10 @@
 		479416551DB4F82D00B524FA /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
 		479416561DB4F82D00B524FA /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
 		479416571DB4F82D00B524FA /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		47D9E0411DB510EC008357C6 /* BKCardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCardModel.h; sourceTree = "<group>"; };
+		47D9E0421DB510EC008357C6 /* BKCardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCardModel.m; sourceTree = "<group>"; };
+		47D9E0441DB515A1008357C6 /* JDNetAPIConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNetAPIConfigure.h; sourceTree = "<group>"; };
+		47D9E0451DB515A1008357C6 /* JDNetAPIConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNetAPIConfigure.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,7 @@
 		4794160B1DB4EC0100B524FA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				47D9E0401DB510C1008357C6 /* BusinessModel */,
 				4794160C1DB4EC0100B524FA /* NetManager */,
 			);
 			path = Classes;
@@ -187,6 +194,8 @@
 				4794164D1DB4EC4200B524FA /* JDNetAPIManager.m */,
 				4794164F1DB4F2C600B524FA /* JDNetModel.h */,
 				479416501DB4F2C600B524FA /* JDNetModel.m */,
+				47D9E0441DB515A1008357C6 /* JDNetAPIConfigure.h */,
+				47D9E0451DB515A1008357C6 /* JDNetAPIConfigure.m */,
 			);
 			path = JDNetManager;
 			sourceTree = "<group>";
@@ -228,6 +237,15 @@
 				479416571DB4F82D00B524FA /* YYModel.h */,
 			);
 			path = YYModel;
+			sourceTree = "<group>";
+		};
+		47D9E0401DB510C1008357C6 /* BusinessModel */ = {
+			isa = PBXGroup;
+			children = (
+				47D9E0411DB510EC008357C6 /* BKCardModel.h */,
+				47D9E0421DB510EC008357C6 /* BKCardModel.m */,
+			);
+			path = BusinessModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +325,7 @@
 				479416441DB4EC0100B524FA /* AFImageDownloader.m in Sources */,
 				479416491DB4EC0100B524FA /* UIProgressView+AFNetworking.m in Sources */,
 				479416511DB4F2C600B524FA /* JDNetModel.m in Sources */,
+				47D9E0431DB510EC008357C6 /* BKCardModel.m in Sources */,
 				479416451DB4EC0100B524FA /* AFNetworkActivityIndicatorManager.m in Sources */,
 				4794164A1DB4EC0100B524FA /* UIRefreshControl+AFNetworking.m in Sources */,
 				479416581DB4F82D00B524FA /* NSObject+YYModel.m in Sources */,
@@ -323,6 +342,7 @@
 				479416591DB4F82D00B524FA /* YYClassInfo.m in Sources */,
 				4794163D1DB4EC0100B524FA /* AFURLResponseSerialization.m in Sources */,
 				479416391DB4EC0100B524FA /* AFHTTPSessionManager.m in Sources */,
+				47D9E0461DB515A1008357C6 /* JDNetAPIConfigure.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +503,7 @@
 				4794160A1DB4EB7300B524FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -17,7 +17,7 @@
  *	@param 	dic 	初始化键值对. 注意，如果dic是来自NSJSONSerialization反序列化的，那么nil的对象会转成NSNull！
  *
  */
-- (void)fillWithPatameters:(NSDictionary *)dic;
+//- (void)fillWithPatameters:(NSDictionary *)dic;
 
 
 /**
@@ -25,7 +25,7 @@
 
  @return 返回键值对
  */
-- (NSDictionary *)toParameters;
+//- (NSDictionary *)toParameters;
 
 @end
 

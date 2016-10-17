@@ -12,12 +12,14 @@
 
 static JDNetAPIManager *_manager = nil;
 
+
+
 + (instancetype)manager
 {
     @synchronized(self) {
         if (_manager == nil) {
             
-            NSString *baseUrl = nil;
+            NSString *baseUrl = @"http://baike.baidu.com";
             _manager = [[JDNetAPIManager alloc] initWithBaseURL:[NSURL URLWithString:baseUrl]];
             _manager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
             _manager.responseSerializer = [AFHTTPResponseSerializer serializer];
@@ -32,10 +34,9 @@ static JDNetAPIManager *_manager = nil;
                       success:(void (^)(NSURLSessionDataTask *, JDNetResponseModel *))success
                       failure:(void (^)(NSURLSessionDataTask *, NSError *))failure
 {
-    NSDictionary *requestDic =  [requestModel  yy_modelToJSONObject];
-//    NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithDictionary:[requestModel toParameters]];
+    NSDictionary *parameters =  [requestModel  yy_modelToJSONObject];
     
-    return [self GET:URLString parameters:requestDic progress:^(NSProgress * _Nonnull downloadProgress) {
+    return [self GET:URLString parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
 //        [self _handleSuccessResponse:task responseObject:responseObject responseModel:responseModel success:success failure:failure];
