@@ -20,7 +20,9 @@ static JDNetAPIManager *_manager = nil;
     @synchronized(self) {
         if (_manager == nil) {
             NSString *baseUrl = [[JDNetAPIConfigure shareInstance] baseUrl];
-            _manager = [[JDNetAPIManager alloc] initWithBaseURL:[NSURL URLWithString:baseUrl]];
+            NSURLSessionConfiguration *proxyConfig = [[JDNetAPIConfigure shareInstance] proxyConfiguration];
+            
+            _manager = [[JDNetAPIManager alloc] initWithBaseURL:[NSURL URLWithString:baseUrl] sessionConfiguration:proxyConfig];
             _manager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
         }
     }
@@ -58,7 +60,7 @@ static JDNetAPIManager *_manager = nil;
                         success:(void (^)(NSURLSessionDataTask *, JDNetResponseModel *))success
                         failure:(void (^)(NSURLSessionDataTask *, NSError *))failure
 {
-   BOOL parseState = [responseModel yy_modelSetWithDictionary:responseObject];
+    BOOL parseState = [responseModel yy_modelSetWithDictionary:responseObject];
     if (parseState) {
         success(task, responseModel);
     }else{

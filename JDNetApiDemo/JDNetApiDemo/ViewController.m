@@ -30,6 +30,7 @@
 }
 - (IBAction)GetReqClick:(id)sender {
     
+    
     BKCardModel *model = [[BKCardModel alloc] init];
     model.scope = @"103";
     model.format = @"json";
