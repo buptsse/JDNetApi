@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JDNetModel.h"
+#import <JDNetApiSDK/JDNetModel.h>
 
 
 //scope=103&format=json&appid=379020&bk_key=银魂&bk_length=600

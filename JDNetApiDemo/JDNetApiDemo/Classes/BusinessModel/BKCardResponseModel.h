@@ -6,7 +6,7 @@
 //  Copyright © 2016 Bupt. All rights reserved.
 //
 
-#import "JDNetModel.h"
+#import <JDNetApiSDK/JDNetModel.h>
 
 @interface BKCardResponseModel : JDNetResponseModel
 

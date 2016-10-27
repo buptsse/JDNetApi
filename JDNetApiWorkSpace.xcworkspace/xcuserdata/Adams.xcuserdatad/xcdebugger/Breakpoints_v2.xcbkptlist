@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JDNetApiSDK/JDNetApiSDK/JDNetManager/JDNetAPIManager.m"
+            timestampString = "499252095.247384"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "-GET:requestModel:responseModel:success:failure:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[JDNetAPIManager GET:requestModel:responseModel:success:failure:]"
+                  moduleName = "JDNetApiSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adams/WorkBench/Webank/JDNetApi/JDNetApiSDK/JDNetApiSDK/JDNetManager/JDNetAPIManager.m"
+                  timestampString = "499252097.230625"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "263">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__66-[JDNetAPIManager GET:requestModel:responseModel:success:failure:]_block_invoke"
+                  moduleName = "JDNetApiSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adams/WorkBench/Webank/JDNetApi/JDNetApiSDK/JDNetApiSDK/JDNetManager/JDNetAPIManager.m"
+                  timestampString = "499252097.232015"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JDNetApiSDK/JDNetApiSDK/JDNetManager/JDNetAPIManager.m"
+            timestampString = "499252095.247384"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "-GET:requestModel:responseModel:success:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

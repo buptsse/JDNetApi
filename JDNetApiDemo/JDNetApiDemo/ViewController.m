@@ -8,13 +8,16 @@
 
 #import "ViewController.h"
 
-#import "JDNetAPIManager.h"
-#import "JDNetAPIConfigure.h"
+#import <JDNetApiSDK/JDNetAPIManager.h>
+#import <JDNetApiSDK/JDNetAPIConfigure.h>
+
+//#import "JDNetAPIManager.h"
+//#import "JDNetAPIConfigure.h"
 #import "BKCardModel.h"
 #import "BKCardResponseModel.h"
 
 
-#import "GYHttpMock.h"
+//#import "GYHttpMock.h"
 
 @interface ViewController ()
 
@@ -42,11 +45,11 @@
     model.bk_length = @"600";
     
 //    mockRequest(@"Get", @"http://baike.baidu.com/api/openapi/BaikeLemmaCardApi?appid=379020&bk_key=银魂&bk_length=600&format=json&scope=103");
-    mockRequest(@"GET", @"(.*?)baike.baidu.com(.*?)".regex).andReturn(200).
-    withBody(@"{\"key\":\"value\"}");
+//    mockRequest(@"GET", @"(.*?)baike.baidu.com(.*?)".regex).andReturn(200).
+//    withBody(@"{\"key\":\"value\"}");
     
     
-    [[JDNetAPIManager manager] GET:@"/api/openapi/BaikeLemmaCardApi" requestModel:model responseModel:[BKCardResponseModel new] success:^(NSURLSessionDataTask *task, JDNetResponseModel *responseModel) {
+    [[JDNetAPIManager sharedInstance] GET:@"/api/openapi/BaikeLemmaCardApi" requestModel:model responseModel:[BKCardResponseModel new] success:^(NSURLSessionDataTask *task, JDNetResponseModel *responseModel) {
         NSLog(@"success");
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"fail");
@@ -67,7 +70,11 @@
     NSLog(@"-----GetWBReqClick----");
 
     
-
+    [[JDNetAPIManager sharedInstance] GET:@"https://sit-open.webank.com/f/api/acq/wepay/ssoLogin?app_id=W0000008&bizSeqNo=1610170K101054R01000000000000511&nonce=09650212221358023205967266386333&sign=463973B6A73BD0F6B825D3036E94B2AC3E216DC8&userId=1000015&version=1.0.0" requestModel:nil responseModel:nil success:^(NSURLSessionDataTask *task, JDNetResponseModel *responseModel) {
+        NSLog(@"success");
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"fail");
+    }];
 }
 
 @end
