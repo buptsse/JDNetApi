@@ -57,25 +57,40 @@ static JDNetAPIConfigure *_shareConfig = nil;
 - (NSURLSessionConfiguration *) proxyConfiguration
 {
     
-    NSString* proxyHost = _proxyIP;
-    NSNumber* proxyPort = @(_proxyPort);
+    NSString *proxyHost = _proxyIP;
+    NSNumber *proxyPort = @(_proxyPort);
+    NSString *userName  = _proxyUser;
+    NSString *password  = _proxyPassword;
     
-    if (proxyHost || proxyPort) {
+    if (proxyHost.length == 0 || proxyPort == nil) {
         return nil;
     }
     // Create an NSURLSessionConfiguration that uses the proxy
-    NSDictionary *proxyDict = @{
+    NSDictionary *
+    proxyDict =@{
                                 @"HTTPEnable"  : [NSNumber numberWithInt:1],
                                 (NSString *)kCFStreamPropertyHTTPProxyHost  : proxyHost,
                                 (NSString *)kCFStreamPropertyHTTPProxyPort  : proxyPort,
-                                
+                                (NSString *)kCFProxyUsernameKey  : userName,
+                                (NSString *)kCFProxyPasswordKey  : password,
+
                                 @"HTTPSEnable" : [NSNumber numberWithInt:1],
                                 (NSString *)kCFStreamPropertyHTTPSProxyHost : proxyHost,
                                 (NSString *)kCFStreamPropertyHTTPSProxyPort : proxyPort,
+                                (NSString *)kCFProxyUsernameKey  : userName,
+                                (NSString *)kCFProxyPasswordKey  : password,
                                 };
     
-    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration ephemeralSessionConfiguration];
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     configuration.connectionProxyDictionary = proxyDict;
+//    NSURLCredential  *credential = [NSURLCredential credentialWithUser:@"" password:@"" persistence: NSURLCredentialPersistenceForSession];
+//    
+//    NSURLProtectionSpace * mySpaceHTTP=[[NSURLProtectionSpace alloc] initWithProxyHost:@"" port:8080 type:NSURLProtectionSpaceHTTPProxy realm:nil authenticationMethod:nil];
+//    NSURLProtectionSpace * mySpaceHTTPS=[[NSURLProtectionSpace alloc] initWithProxyHost:@"" port:8080 type:NSURLProtectionSpaceHTTPSProxy realm:nil authenticationMethod:nil];
+//    
+//    [[NSURLCredentialStorage sharedCredentialStorage]  setCredential:credential forProtectionSpace:mySpaceHTTP];
+//    [[NSURLCredentialStorage sharedCredentialStorage]  setCredential:credential forProtectionSpace:mySpaceHTTPS];
+    
     return configuration;
 }
 
@@ -85,8 +100,8 @@ static JDNetAPIConfigure *_shareConfig = nil;
 - (void) _resetJDNetAPIManager
 {
     NSURL *url = [NSURL URLWithString:self.baseUrl];
-  
-    JDNetAPIManager *manager = [[JDNetAPIManager alloc] initWithBaseURL:url sessionConfiguration:nil];
+    NSURLSessionConfiguration *proxyConfig = [self proxyConfiguration];
+    JDNetAPIManager *manager = [[JDNetAPIManager alloc] initWithBaseURL:url sessionConfiguration:proxyConfig];
     [JDNetAPIManager setManager:manager];
 }
 

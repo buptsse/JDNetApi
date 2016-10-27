@@ -43,8 +43,18 @@ static JDNetAPIManager *_manager = nil;
     return [self GET:URLString parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"\n\nHTTP Success URL :%@",task.originalRequest.URL);
+        UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"标题" message:[responseObject description]   delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"好的", nil];
+        [alertview show];
+        
+        
         [self _handleSuccessResponse:task responseObject:responseObject responseModel:responseModel success:success failure:failure];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"\n\nHTTP FAIL URL :%@",task.originalRequest.URL);
+
+        UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"标题" message:[error description]   delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"好的", nil];
+        [alertview show];
+        
         [self _handleFailureResponse:task error:error failure:failure];
     }];
 
@@ -60,6 +70,9 @@ static JDNetAPIManager *_manager = nil;
                         success:(void (^)(NSURLSessionDataTask *, JDNetResponseModel *))success
                         failure:(void (^)(NSURLSessionDataTask *, NSError *))failure
 {
+    if (responseModel == nil) {
+        responseModel = [JDNetResponseModel new];
+    }
     BOOL parseState = [responseModel yy_modelSetWithDictionary:responseObject];
     if (parseState) {
         success(task, responseModel);

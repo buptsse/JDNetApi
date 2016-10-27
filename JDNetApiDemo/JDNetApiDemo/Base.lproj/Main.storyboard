@@ -26,6 +26,22 @@
                                     <action selector="GetReqClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nXv-Fn-7MQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eg2-QR-2pY">
+                                <frame key="frameInset" minX="156" minY="171" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="加入代理"/>
+                                <connections>
+                                    <action selector="addProxyClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VpR-gA-apY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOd-gp-cpT">
+                                <frame key="frameInset" minX="143" minY="209" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get-WB-Req"/>
+                                <connections>
+                                    <action selector="GetWBReqClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g9T-Q4-cvN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>

@@ -35,6 +35,21 @@
 		47D9E0431DB510EC008357C6 /* BKCardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D9E0421DB510EC008357C6 /* BKCardModel.m */; };
 		47D9E0461DB515A1008357C6 /* JDNetAPIConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D9E0451DB515A1008357C6 /* JDNetAPIConfigure.m */; };
 		47D9E0491DB5221D008357C6 /* BKCardResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D9E0481DB5221D008357C6 /* BKCardResponseModel.m */; };
+		47DB8DC71DBDACBE005C5C4F /* NSString+mock.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DB8DAA1DBDACBE005C5C4F /* NSString+mock.m */; };
+		47DB8DC81DBDACBE005C5C4F /* NSURLRequest+GYURLRequestProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DB8DAC1DBDACBE005C5C4F /* NSURLRequest+GYURLRequestProtocol.m */; };
+		47DB8DC91DBDACBE005C5C4F /* GYHttpMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DB8DAE1DBDACBE005C5C4F /* GYHttpMock.m */; };
+		47DB8DCA1DBDACBE005C5C4F /* GYHttpMock.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 47DB8DAF1DBDACBE005C5C4F /* GYHttpMock.podspec */; };
+		47DB8DCB1DBDACBE005C5C4F /* GYMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DB8DB11DBDACBE005C5C4F /* GYMatcher.m */; };
+		47DB8DCC1DBDACBE005C5C4F /* GYMockURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DB8DB31DBDACBE005C5C4F /* GYMockURLProtocol.m */; };
+		47DB8DCD1DBDACBE005C5C4F /* GYHttpClientHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DB8DB61DBDACBE005C5C4F /* GYHttpClientHook.m */; };
+		47DB8DCE1DBDACBE005C5C4F /* GYNSURLHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DB8DB81DBDACBE005C5C4F /* GYNSURLHook.m */; };
+		47DB8DCF1DBDACBE005C5C4F /* GYNSURLSessionHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DB8DBA1DBDACBE005C5C4F /* GYNSURLSessionHook.m */; };
+		47DB8DD01DBDACBE005C5C4F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 47DB8DBB1DBDACBE005C5C4F /* LICENSE */; };
+		47DB8DD11DBDACBE005C5C4F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 47DB8DBC1DBDACBE005C5C4F /* README.md */; };
+		47DB8DD21DBDACBE005C5C4F /* GYMockRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DB8DBF1DBDACBE005C5C4F /* GYMockRequest.m */; };
+		47DB8DD31DBDACBE005C5C4F /* GYMockRequestDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DB8DC11DBDACBE005C5C4F /* GYMockRequestDSL.m */; };
+		47DB8DD41DBDACBE005C5C4F /* GYMockResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DB8DC41DBDACBE005C5C4F /* GYMockResponse.m */; };
+		47DB8DD51DBDACBE005C5C4F /* GYMockResponseDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DB8DC61DBDACBE005C5C4F /* GYMockResponseDSL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +111,33 @@
 		47D9E0451DB515A1008357C6 /* JDNetAPIConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNetAPIConfigure.m; sourceTree = "<group>"; };
 		47D9E0471DB5221D008357C6 /* BKCardResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCardResponseModel.h; sourceTree = "<group>"; };
 		47D9E0481DB5221D008357C6 /* BKCardResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCardResponseModel.m; sourceTree = "<group>"; };
+		47DB8DA91DBDACBE005C5C4F /* NSString+mock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+mock.h"; sourceTree = "<group>"; };
+		47DB8DAA1DBDACBE005C5C4F /* NSString+mock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+mock.m"; sourceTree = "<group>"; };
+		47DB8DAB1DBDACBE005C5C4F /* NSURLRequest+GYURLRequestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+GYURLRequestProtocol.h"; sourceTree = "<group>"; };
+		47DB8DAC1DBDACBE005C5C4F /* NSURLRequest+GYURLRequestProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+GYURLRequestProtocol.m"; sourceTree = "<group>"; };
+		47DB8DAD1DBDACBE005C5C4F /* GYHttpMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYHttpMock.h; sourceTree = "<group>"; };
+		47DB8DAE1DBDACBE005C5C4F /* GYHttpMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYHttpMock.m; sourceTree = "<group>"; };
+		47DB8DAF1DBDACBE005C5C4F /* GYHttpMock.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GYHttpMock.podspec; sourceTree = "<group>"; };
+		47DB8DB01DBDACBE005C5C4F /* GYMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMatcher.h; sourceTree = "<group>"; };
+		47DB8DB11DBDACBE005C5C4F /* GYMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMatcher.m; sourceTree = "<group>"; };
+		47DB8DB21DBDACBE005C5C4F /* GYMockURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMockURLProtocol.h; sourceTree = "<group>"; };
+		47DB8DB31DBDACBE005C5C4F /* GYMockURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMockURLProtocol.m; sourceTree = "<group>"; };
+		47DB8DB51DBDACBE005C5C4F /* GYHttpClientHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYHttpClientHook.h; sourceTree = "<group>"; };
+		47DB8DB61DBDACBE005C5C4F /* GYHttpClientHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYHttpClientHook.m; sourceTree = "<group>"; };
+		47DB8DB71DBDACBE005C5C4F /* GYNSURLHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYNSURLHook.h; sourceTree = "<group>"; };
+		47DB8DB81DBDACBE005C5C4F /* GYNSURLHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYNSURLHook.m; sourceTree = "<group>"; };
+		47DB8DB91DBDACBE005C5C4F /* GYNSURLSessionHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYNSURLSessionHook.h; sourceTree = "<group>"; };
+		47DB8DBA1DBDACBE005C5C4F /* GYNSURLSessionHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYNSURLSessionHook.m; sourceTree = "<group>"; };
+		47DB8DBB1DBDACBE005C5C4F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		47DB8DBC1DBDACBE005C5C4F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		47DB8DBE1DBDACBE005C5C4F /* GYMockRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMockRequest.h; sourceTree = "<group>"; };
+		47DB8DBF1DBDACBE005C5C4F /* GYMockRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMockRequest.m; sourceTree = "<group>"; };
+		47DB8DC01DBDACBE005C5C4F /* GYMockRequestDSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMockRequestDSL.h; sourceTree = "<group>"; };
+		47DB8DC11DBDACBE005C5C4F /* GYMockRequestDSL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMockRequestDSL.m; sourceTree = "<group>"; };
+		47DB8DC31DBDACBE005C5C4F /* GYMockResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMockResponse.h; sourceTree = "<group>"; };
+		47DB8DC41DBDACBE005C5C4F /* GYMockResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMockResponse.m; sourceTree = "<group>"; };
+		47DB8DC51DBDACBE005C5C4F /* GYMockResponseDSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMockResponseDSL.h; sourceTree = "<group>"; };
+		47DB8DC61DBDACBE005C5C4F /* GYMockResponseDSL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMockResponseDSL.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +204,7 @@
 		4794160C1DB4EC0100B524FA /* NetManager */ = {
 			isa = PBXGroup;
 			children = (
+				47DB8DA71DBDACBE005C5C4F /* Mock */,
 				479416521DB4F82D00B524FA /* YYModel */,
 				4794160D1DB4EC0100B524FA /* AFNetworking */,
 				4794161B1DB4EC0100B524FA /* JDNetManager */,
@@ -253,6 +296,72 @@
 			path = BusinessModel;
 			sourceTree = "<group>";
 		};
+		47DB8DA71DBDACBE005C5C4F /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				47DB8DA81DBDACBE005C5C4F /* Categories */,
+				47DB8DAD1DBDACBE005C5C4F /* GYHttpMock.h */,
+				47DB8DAE1DBDACBE005C5C4F /* GYHttpMock.m */,
+				47DB8DAF1DBDACBE005C5C4F /* GYHttpMock.podspec */,
+				47DB8DB01DBDACBE005C5C4F /* GYMatcher.h */,
+				47DB8DB11DBDACBE005C5C4F /* GYMatcher.m */,
+				47DB8DB21DBDACBE005C5C4F /* GYMockURLProtocol.h */,
+				47DB8DB31DBDACBE005C5C4F /* GYMockURLProtocol.m */,
+				47DB8DB41DBDACBE005C5C4F /* Hooks */,
+				47DB8DBB1DBDACBE005C5C4F /* LICENSE */,
+				47DB8DBC1DBDACBE005C5C4F /* README.md */,
+				47DB8DBD1DBDACBE005C5C4F /* Request */,
+				47DB8DC21DBDACBE005C5C4F /* Response */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		47DB8DA81DBDACBE005C5C4F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				47DB8DA91DBDACBE005C5C4F /* NSString+mock.h */,
+				47DB8DAA1DBDACBE005C5C4F /* NSString+mock.m */,
+				47DB8DAB1DBDACBE005C5C4F /* NSURLRequest+GYURLRequestProtocol.h */,
+				47DB8DAC1DBDACBE005C5C4F /* NSURLRequest+GYURLRequestProtocol.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		47DB8DB41DBDACBE005C5C4F /* Hooks */ = {
+			isa = PBXGroup;
+			children = (
+				47DB8DB51DBDACBE005C5C4F /* GYHttpClientHook.h */,
+				47DB8DB61DBDACBE005C5C4F /* GYHttpClientHook.m */,
+				47DB8DB71DBDACBE005C5C4F /* GYNSURLHook.h */,
+				47DB8DB81DBDACBE005C5C4F /* GYNSURLHook.m */,
+				47DB8DB91DBDACBE005C5C4F /* GYNSURLSessionHook.h */,
+				47DB8DBA1DBDACBE005C5C4F /* GYNSURLSessionHook.m */,
+			);
+			path = Hooks;
+			sourceTree = "<group>";
+		};
+		47DB8DBD1DBDACBE005C5C4F /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				47DB8DBE1DBDACBE005C5C4F /* GYMockRequest.h */,
+				47DB8DBF1DBDACBE005C5C4F /* GYMockRequest.m */,
+				47DB8DC01DBDACBE005C5C4F /* GYMockRequestDSL.h */,
+				47DB8DC11DBDACBE005C5C4F /* GYMockRequestDSL.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		47DB8DC21DBDACBE005C5C4F /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				47DB8DC31DBDACBE005C5C4F /* GYMockResponse.h */,
+				47DB8DC41DBDACBE005C5C4F /* GYMockResponse.m */,
+				47DB8DC51DBDACBE005C5C4F /* GYMockResponseDSL.h */,
+				47DB8DC61DBDACBE005C5C4F /* GYMockResponseDSL.m */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,6 +393,7 @@
 				TargetAttributes = {
 					479415F01DB4EB7300B524FA = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = X96S8D333M;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -311,9 +421,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47DB8DCA1DBDACBE005C5C4F /* GYHttpMock.podspec in Resources */,
 				479416041DB4EB7300B524FA /* LaunchScreen.storyboard in Resources */,
 				479416011DB4EB7300B524FA /* Assets.xcassets in Resources */,
 				479415FF1DB4EB7300B524FA /* Main.storyboard in Resources */,
+				47DB8DD01DBDACBE005C5C4F /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,21 +436,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47DB8DD41DBDACBE005C5C4F /* GYMockResponse.m in Sources */,
 				4794163E1DB4EC0100B524FA /* AFURLSessionManager.m in Sources */,
 				479415FC1DB4EB7300B524FA /* ViewController.m in Sources */,
 				479416471DB4EC0100B524FA /* UIButton+AFNetworking.m in Sources */,
 				479416441DB4EC0100B524FA /* AFImageDownloader.m in Sources */,
 				479416491DB4EC0100B524FA /* UIProgressView+AFNetworking.m in Sources */,
 				479416511DB4F2C600B524FA /* JDNetModel.m in Sources */,
+				47DB8DCF1DBDACBE005C5C4F /* GYNSURLSessionHook.m in Sources */,
 				47D9E0431DB510EC008357C6 /* BKCardModel.m in Sources */,
 				479416451DB4EC0100B524FA /* AFNetworkActivityIndicatorManager.m in Sources */,
 				4794164A1DB4EC0100B524FA /* UIRefreshControl+AFNetworking.m in Sources */,
+				47DB8DCB1DBDACBE005C5C4F /* GYMatcher.m in Sources */,
+				47DB8DD51DBDACBE005C5C4F /* GYMockResponseDSL.m in Sources */,
+				47DB8DC91DBDACBE005C5C4F /* GYHttpMock.m in Sources */,
 				479416581DB4F82D00B524FA /* NSObject+YYModel.m in Sources */,
 				479416431DB4EC0100B524FA /* AFAutoPurgingImageCache.m in Sources */,
+				47DB8DCE1DBDACBE005C5C4F /* GYNSURLHook.m in Sources */,
+				47DB8DC71DBDACBE005C5C4F /* NSString+mock.m in Sources */,
 				479416481DB4EC0100B524FA /* UIImageView+AFNetworking.m in Sources */,
 				479415F91DB4EB7300B524FA /* AppDelegate.m in Sources */,
 				4794163A1DB4EC0100B524FA /* AFNetworkReachabilityManager.m in Sources */,
+				47DB8DD31DBDACBE005C5C4F /* GYMockRequestDSL.m in Sources */,
+				47DB8DD21DBDACBE005C5C4F /* GYMockRequest.m in Sources */,
 				479415F61DB4EB7300B524FA /* main.m in Sources */,
+				47DB8DC81DBDACBE005C5C4F /* NSURLRequest+GYURLRequestProtocol.m in Sources */,
 				4794163B1DB4EC0100B524FA /* AFSecurityPolicy.m in Sources */,
 				4794164B1DB4EC0100B524FA /* UIWebView+AFNetworking.m in Sources */,
 				4794164E1DB4EC4200B524FA /* JDNetAPIManager.m in Sources */,
@@ -346,9 +468,12 @@
 				4794163C1DB4EC0100B524FA /* AFURLRequestSerialization.m in Sources */,
 				479416591DB4F82D00B524FA /* YYClassInfo.m in Sources */,
 				4794163D1DB4EC0100B524FA /* AFURLResponseSerialization.m in Sources */,
+				47DB8DD11DBDACBE005C5C4F /* README.md in Sources */,
 				47D9E0491DB5221D008357C6 /* BKCardResponseModel.m in Sources */,
+				47DB8DCC1DBDACBE005C5C4F /* GYMockURLProtocol.m in Sources */,
 				479416391DB4EC0100B524FA /* AFHTTPSessionManager.m in Sources */,
 				47D9E0461DB515A1008357C6 /* JDNetAPIConfigure.m in Sources */,
+				47DB8DCD1DBDACBE005C5C4F /* GYHttpClientHook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,12 +593,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = X96S8D333M;
 				INFOPLIST_FILE = JDNetApiDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bupt.JDNetApiDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webank.wepowernew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "09bb96b9-1fd7-47ca-9d8c-d6eceb201fb8";
+				PROVISIONING_PROFILE_SPECIFIER = wepowernew;
 			};
 			name = Debug;
 		};
@@ -481,12 +609,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shenzhen Shijitianyou Technology Limited Company";
+				DEVELOPMENT_TEAM = X96S8D333M;
 				INFOPLIST_FILE = JDNetApiDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bupt.JDNetApiDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webank.wepowernew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "09bb96b9-1fd7-47ca-9d8c-d6eceb201fb8";
+				PROVISIONING_PROFILE_SPECIFIER = wepowernew;
 			};
 			name = Release;
 		};
