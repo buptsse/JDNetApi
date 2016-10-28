@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JDNetApiSDK/JDNetApiSDK/JDNetManager/JDNetAPIManager.m"
-            timestampString = "499263428.500943"
+            timestampString = "499366942.143599"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "-GET:requestModel:responseModel:success:failure:"
             landmarkType = "7">
             <Locations>
@@ -26,11 +26,11 @@
                   moduleName = "JDNetApiSDK"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Adams/WorkBench/Webank/JDNetApi/JDNetApiSDK/JDNetApiSDK/JDNetManager/JDNetAPIManager.m"
-                  timestampString = "499321369.238217"
+                  timestampString = "499366944.388718"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
                   offsetFromSymbolStart = "263">
                </Location>
                <Location
@@ -41,11 +41,11 @@
                   moduleName = "JDNetApiSDK"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Adams/WorkBench/Webank/JDNetApi/JDNetApiSDK/JDNetApiSDK/JDNetManager/JDNetAPIManager.m"
-                  timestampString = "499321369.239799"
+                  timestampString = "499366944.390178"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
                   offsetFromSymbolStart = "52">
                </Location>
             </Locations>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JDNetApiSDK/JDNetApiSDK/JDNetManager/JDNetAPIManager.m"
-            timestampString = "499263428.500943"
+            timestampString = "499366942.143599"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "-GET:requestModel:responseModel:success:failure:"
             landmarkType = "7">
          </BreakpointContent>
@@ -128,6 +128,38 @@
             startingLineNumber = "119"
             endingLineNumber = "119"
             landmarkName = "-GET:parameters:progress:success:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JDNetApiDemo/JDNetApiDemo/ViewController.m"
+            timestampString = "499366811.529377"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "-GetWBReqClick:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JDNetApiDemo/JDNetApiDemo/ViewController.m"
+            timestampString = "499366812.256773"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "-GetWBReqClick:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

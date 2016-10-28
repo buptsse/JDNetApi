@@ -36,6 +36,7 @@
             
             _manager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:baseUrl] sessionConfiguration:proxyConfig];
             _manager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
+            _manager.requestSerializer.timeoutInterval = 10;
         }
     }
 }
@@ -55,7 +56,7 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"\n\nHTTP Success URL :%@",task.originalRequest.URL);
-        UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"标题" message:[responseObject description]   delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"好的", nil];
+        UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"标题1" message:[responseObject description]   delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"好的", nil];
         [alertview show];
         
         
@@ -63,7 +64,7 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"\n\nHTTP FAIL URL :%@",task.originalRequest.URL);
 
-        UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"标题" message:[error description]   delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"好的", nil];
+        UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"标题2" message:[error description]   delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"好的", nil];
         [alertview show];
         
         [self _handleFailureResponse:task error:error failure:failure];

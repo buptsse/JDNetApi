@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		476A7FF01DC3B1E400045650 /* JDNetApiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4756BDE31DC2FF0500D0FF65 /* JDNetApiSDK.framework */; };
 		479415F61DB4EB7300B524FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 479415F51DB4EB7300B524FA /* main.m */; };
 		479415F91DB4EB7300B524FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 479415F81DB4EB7300B524FA /* AppDelegate.m */; };
 		479415FC1DB4EB7300B524FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 479415FB1DB4EB7300B524FA /* ViewController.m */; };
@@ -42,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				476A7FF01DC3B1E400045650 /* JDNetApiSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
