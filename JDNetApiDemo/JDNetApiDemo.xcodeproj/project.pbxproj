@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47232B011DC236CE00F2B49E /* JDNetApiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A0C81C1DC22A6600B18C06 /* JDNetApiSDK.framework */; };
 		479415F61DB4EB7300B524FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 479415F51DB4EB7300B524FA /* main.m */; };
 		479415F91DB4EB7300B524FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 479415F81DB4EB7300B524FA /* AppDelegate.m */; };
 		479415FC1DB4EB7300B524FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 479415FB1DB4EB7300B524FA /* ViewController.m */; };
 		479415FF1DB4EB7300B524FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 479415FD1DB4EB7300B524FA /* Main.storyboard */; };
 		479416011DB4EB7300B524FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 479416001DB4EB7300B524FA /* Assets.xcassets */; };
 		479416041DB4EB7300B524FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 479416021DB4EB7300B524FA /* LaunchScreen.storyboard */; };
-		47A0C5D31DC1F37200B18C06 /* JDNetApiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A0C5D21DC1F37200B18C06 /* JDNetApiSDK.framework */; };
 		47D9E0431DB510EC008357C6 /* BKCardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D9E0421DB510EC008357C6 /* BKCardModel.m */; };
 		47D9E0491DB5221D008357C6 /* BKCardResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D9E0481DB5221D008357C6 /* BKCardResponseModel.m */; };
 /* End PBXBuildFile section */
@@ -29,7 +29,9 @@
 		479416001DB4EB7300B524FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		479416031DB4EB7300B524FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		479416051DB4EB7300B524FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47A0C5D21DC1F37200B18C06 /* JDNetApiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JDNetApiSDK.framework; path = "../JDNetApiSDK/build/Debug-iphoneos/JDNetApiSDK.framework"; sourceTree = "<group>"; };
+		47A0C5E21DC2195100B18C06 /* JDNetApiSDKVendor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDNetApiSDKVendor.h; sourceTree = "<group>"; };
+		47A0C5E31DC2195100B18C06 /* JDNetApiSDKVendor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDNetApiSDKVendor.m; sourceTree = "<group>"; };
+		47A0C81C1DC22A6600B18C06 /* JDNetApiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JDNetApiSDK.framework; path = "../../../../Library/Developer/Xcode/DerivedData/JDNetApiWorkSpace-gteelwxvfsddwugsjoquypkvnjku/Build/Products/Debug-iphonesimulator/JDNetApiSDK.framework"; sourceTree = "<group>"; };
 		47D9E0411DB510EC008357C6 /* BKCardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCardModel.h; sourceTree = "<group>"; };
 		47D9E0421DB510EC008357C6 /* BKCardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCardModel.m; sourceTree = "<group>"; };
 		47D9E0471DB5221D008357C6 /* BKCardResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCardResponseModel.h; sourceTree = "<group>"; };
@@ -41,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47A0C5D31DC1F37200B18C06 /* JDNetApiSDK.framework in Frameworks */,
+				47232B011DC236CE00F2B49E /* JDNetApiSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				479415F31DB4EB7300B524FA /* JDNetApiDemo */,
+				47A0C5E11DC2195100B18C06 /* JDNetApiSDKVendor */,
 				479415F21DB4EB7300B524FA /* Products */,
 				47A0C5D11DC1F37200B18C06 /* Frameworks */,
 			);
@@ -101,9 +104,18 @@
 		47A0C5D11DC1F37200B18C06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				47A0C5D21DC1F37200B18C06 /* JDNetApiSDK.framework */,
+				47A0C81C1DC22A6600B18C06 /* JDNetApiSDK.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47A0C5E11DC2195100B18C06 /* JDNetApiSDKVendor */ = {
+			isa = PBXGroup;
+			children = (
+				47A0C5E21DC2195100B18C06 /* JDNetApiSDKVendor.h */,
+				47A0C5E31DC2195100B18C06 /* JDNetApiSDKVendor.m */,
+			);
+			path = JDNetApiSDKVendor;
 			sourceTree = "<group>";
 		};
 		47D9E0401DB510C1008357C6 /* BusinessModel */ = {
@@ -315,9 +327,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = X96S8D333M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JDNetApiDemo",
+					"/Users/Adams/Library/Developer/Xcode/DerivedData/JDNetApiWorkSpace-gteelwxvfsddwugsjoquypkvnjku/Build/Products/Debug-iphonesimulator",
+				);
 				INFOPLIST_FILE = JDNetApiDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.webank.wepowernew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "09bb96b9-1fd7-47ca-9d8c-d6eceb201fb8";
@@ -331,9 +352,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shenzhen Shijitianyou Technology Limited Company";
 				DEVELOPMENT_TEAM = X96S8D333M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JDNetApiDemo",
+				);
 				INFOPLIST_FILE = JDNetApiDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.webank.wepowernew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "09bb96b9-1fd7-47ca-9d8c-d6eceb201fb8";

@@ -1,0 +1,6 @@
+framework module JDNetApiSDK {
+  umbrella header "JDNetApiSDK.h"
+
+  export *
+  module * { export * }
+}

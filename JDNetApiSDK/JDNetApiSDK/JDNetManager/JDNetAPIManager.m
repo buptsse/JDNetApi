@@ -15,8 +15,6 @@
     AFHTTPSessionManager *_manager;
 }
 
-static JDNetAPIManager *g_sharedInstance = nil;
-
 
 + (instancetype)sharedInstance
 {
@@ -24,7 +22,6 @@ static JDNetAPIManager *g_sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [[JDNetAPIManager alloc] init];
-        // Do any other initialisation stuff here
         [sharedInstance initDefaultManager];
     });
     return sharedInstance;

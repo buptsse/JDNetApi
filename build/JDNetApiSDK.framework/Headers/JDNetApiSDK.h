@@ -16,5 +16,4 @@ FOUNDATION_EXPORT const unsigned char JDNetApiSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <JDNetApiSDK/PublicHeader.h>
 
-#import <JDNetApiSDK/JDNetAPIManager.h>
-#import <JDNetApiSDK/JDNetAPIConfigure.h>
+

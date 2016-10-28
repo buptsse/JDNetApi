@@ -8,25 +8,38 @@
 
 #import "JDNetAPIManager.h"
 #import "JDNetAPIConfigure.h"
+#import "YYModel.h"
+#import "AFHTTPSessionManager.h"
 
-@implementation JDNetAPIManager
+@implementation JDNetAPIManager{
+    AFHTTPSessionManager *_manager;
+}
 
-static JDNetAPIManager *_manager = nil;
 
++ (instancetype)sharedInstance
+{
+    
+    NSLog(@"testtt!!!!!cjd");
+    static JDNetAPIManager *sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [[JDNetAPIManager alloc] init];
+        [sharedInstance initDefaultManager];
+    });
+    return sharedInstance;
+}
 
-
-+ (instancetype)manager
+- (void) initDefaultManager
 {
     @synchronized(self) {
         if (_manager == nil) {
             NSString *baseUrl = [[JDNetAPIConfigure shareInstance] baseUrl];
             NSURLSessionConfiguration *proxyConfig = [[JDNetAPIConfigure shareInstance] proxyConfiguration];
             
-            _manager = [[JDNetAPIManager alloc] initWithBaseURL:[NSURL URLWithString:baseUrl] sessionConfiguration:proxyConfig];
+            _manager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:baseUrl] sessionConfiguration:proxyConfig];
             _manager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
         }
     }
-    return _manager;
 }
 
 
@@ -40,7 +53,7 @@ static JDNetAPIManager *_manager = nil;
 {
     NSDictionary *parameters =  [requestModel  yy_modelToJSONObject];
     
-    return [self GET:URLString parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
+    return [_manager GET:URLString parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"\n\nHTTP Success URL :%@",task.originalRequest.URL);
@@ -90,9 +103,9 @@ static JDNetAPIManager *_manager = nil;
 
 
 
-+ (void)setManager:(JDNetAPIManager *)manager
-{
-    _manager = manager;
-}
+//+ (void)setManager:(JDNetAPIManager *)manager
+//{
+//    _manager = manager;
+//}
 
 @end

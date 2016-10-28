@@ -8,13 +8,17 @@
 
 #import "ViewController.h"
 
-#import <JDNetApiSDK/JDNetAPIManager.h>
-#import <JDNetApiSDK/JDNetAPIConfigure.h>
+#import <JDNetApiSDK/JDNetApiSDK.h>
+
 
 //#import "JDNetAPIManager.h"
 //#import "JDNetAPIConfigure.h"
 #import "BKCardModel.h"
 #import "BKCardResponseModel.h"
+
+
+#import "AFHTTPSessionManager.h"
+
 
 
 //#import "GYHttpMock.h"
@@ -68,7 +72,10 @@
     
     
     NSLog(@"-----GetWBReqClick----");
-
+    AFHTTPSessionManager *F = [AFHTTPSessionManager manager];
+    
+    [F initWithBaseURL:nil];
+    NSLog(@"");
     
     [[JDNetAPIManager sharedInstance] GET:@"https://sit-open.webank.com/f/api/acq/wepay/ssoLogin?app_id=W0000008&bizSeqNo=1610170K101054R01000000000000511&nonce=09650212221358023205967266386333&sign=463973B6A73BD0F6B825D3036E94B2AC3E216DC8&userId=1000015&version=1.0.0" requestModel:nil responseModel:nil success:^(NSURLSessionDataTask *task, JDNetResponseModel *responseModel) {
         NSLog(@"success");

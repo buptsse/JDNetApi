@@ -101,8 +101,8 @@ static JDNetAPIConfigure *_shareConfig = nil;
 {
     NSURL *url = [NSURL URLWithString:self.baseUrl];
     NSURLSessionConfiguration *proxyConfig = [self proxyConfiguration];
-    JDNetAPIManager *manager = [[JDNetAPIManager alloc] initWithBaseURL:url sessionConfiguration:proxyConfig];
-    [JDNetAPIManager setManager:manager];
+//    JDNetAPIManager *manager = [[JDNetAPIManager alloc] initWithBaseURL:url sessionConfiguration:proxyConfig];
+//    [JDNetAPIManager setManager:manager];
 }
 
 
