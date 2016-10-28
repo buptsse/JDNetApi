@@ -55,15 +55,3 @@ nm $CODESIGNING_FOLDER_PATH | sort | uniq | grep " D " | cut -d' ' -f3 | grep -v
 
 nm $CODESIGNING_FOLDER_PATH | sort | uniq | grep " S " | cut -d' ' -f3 | grep -v "\$_NS" | grep -v ".eh" | grep -v "llvm" | grep -v "\$_UI" | grep -v "OBJC_" | sed -e 's/_\(.*\)/#ifndef \1\'$'\n''#define \1 __NS_SYMBOL(\1)\'$'\n''#endif\'$'\n''/g'>> $header
 
-
-
-
-
-#sed -i “s/l#ifndef/#ifndef/g” `grep l#ifndef -rl $header`
-
-#input << $header
-#
-#output=$(echo "$input" | sed 's/OBJC_PROTOCOL_/mytest/g')
-#
-#echo "$output" > $header
-
