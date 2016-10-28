@@ -26,7 +26,7 @@
                   moduleName = "JDNetApiSDK"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Adams/WorkBench/Webank/JDNetApi/JDNetApiSDK/JDNetApiSDK/JDNetManager/JDNetAPIManager.m"
-                  timestampString = "499310203.026647"
+                  timestampString = "499321369.238217"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "54"
@@ -41,7 +41,7 @@
                   moduleName = "JDNetApiSDK"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Adams/WorkBench/Webank/JDNetApi/JDNetApiSDK/JDNetApiSDK/JDNetManager/JDNetAPIManager.m"
-                  timestampString = "499310203.028076"
+                  timestampString = "499321369.239799"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "56"
@@ -112,6 +112,22 @@
             startingLineNumber = "23"
             endingLineNumber = "23"
             landmarkName = "+sharedInstance"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JDNetApiDemo/JDNetApiDemo/Classes/JDNetManager/NetManager/AFNetworking/AFHTTPSessionManager.m"
+            timestampString = "499318153.307408"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "-GET:parameters:progress:success:failure:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

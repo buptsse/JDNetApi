@@ -156,24 +156,8 @@
 #define GYNSURLSessionHook __NS_SYMBOL(GYNSURLSessionHook)
 #endif
 
-#ifndef JDNetAPIConfigure
-#define JDNetAPIConfigure __NS_SYMBOL(JDNetAPIConfigure)
-#endif
-
-#ifndef JDNetAPIManager
-#define JDNetAPIManager __NS_SYMBOL(JDNetAPIManager)
-#endif
-
 #ifndef JDNetApiSDKVendor
 #define JDNetApiSDKVendor __NS_SYMBOL(JDNetApiSDKVendor)
-#endif
-
-#ifndef JDNetRequestModel
-#define JDNetRequestModel __NS_SYMBOL(JDNetRequestModel)
-#endif
-
-#ifndef JDNetResponseModel
-#define JDNetResponseModel __NS_SYMBOL(JDNetResponseModel)
 #endif
 
 #ifndef YYClassInfo
@@ -217,34 +201,6 @@
 #define YYEncodingGetType __NS_SYMBOL(YYEncodingGetType)
 #endif
 
-#ifndef AFPercentEscapedStringFromString
-#define AFPercentEscapedStringFromString __NS_SYMBOL(AFPercentEscapedStringFromString)
-#endif
-
-#ifndef AFStringFromNetworkReachabilityStatus
-#define AFStringFromNetworkReachabilityStatus __NS_SYMBOL(AFStringFromNetworkReachabilityStatus)
-#endif
-
-#ifndef YYEncodingGetType
-#define YYEncodingGetType __NS_SYMBOL(YYEncodingGetType)
-#endif
-
-#ifndef AFQueryStringFromParameters
-#define AFQueryStringFromParameters __NS_SYMBOL(AFQueryStringFromParameters)
-#endif
-
-#ifndef AFQueryStringPairsFromDictionary
-#define AFQueryStringPairsFromDictionary __NS_SYMBOL(AFQueryStringPairsFromDictionary)
-#endif
-
-#ifndef AFQueryStringPairsFromKeyAndValue
-#define AFQueryStringPairsFromKeyAndValue __NS_SYMBOL(AFQueryStringPairsFromKeyAndValue)
-#endif
-
-#ifndef mockRequest
-#define mockRequest __NS_SYMBOL(mockRequest)
-#endif
-
 #ifndef AFQueryStringFromParameters
 #define AFQueryStringFromParameters __NS_SYMBOL(AFQueryStringFromParameters)
 #endif
@@ -286,116 +242,8 @@
 #define AFMultipartFormData __NS_SYMBOL(AFMultipartFormData)
 #endif
 
-#ifndef GYHTTPRequest
-#define GYHTTPRequest __NS_SYMBOL(GYHTTPRequest)
-#endif
-
-#ifndef AFImageCache
-#define AFImageCache __NS_SYMBOL(AFImageCache)
-#endif
-
-#ifndef AFImageRequestCache
-#define AFImageRequestCache __NS_SYMBOL(AFImageRequestCache)
-#endif
-
-#ifndef AFURLResponseSerialization
-#define AFURLResponseSerialization __NS_SYMBOL(AFURLResponseSerialization)
-#endif
-
-#ifndef AFURLRequestSerialization
-#define AFURLRequestSerialization __NS_SYMBOL(AFURLRequestSerialization)
-#endif
-
-#ifndef AFMultipartFormData
-#define AFMultipartFormData __NS_SYMBOL(AFMultipartFormData)
-#endif
-
 #ifndef JDNetApiSDKVendorVersionString
 #define JDNetApiSDKVendorVersionString __NS_SYMBOL(JDNetApiSDKVendorVersionString)
-#endif
-
-#ifndef JDNetApiSDKVendorVersionString
-#define JDNetApiSDKVendorVersionString __NS_SYMBOL(JDNetApiSDKVendorVersionString)
-#endif
-
-#ifndef JDNetApiSDKVendorVersionNumber
-#define JDNetApiSDKVendorVersionNumber __NS_SYMBOL(JDNetApiSDKVendorVersionNumber)
-#endif
-
-#ifndef AFNetworkingReachabilityDidChangeNotification
-#define AFNetworkingReachabilityDidChangeNotification __NS_SYMBOL(AFNetworkingReachabilityDidChangeNotification)
-#endif
-
-#ifndef AFNetworkingReachabilityNotificationStatusItem
-#define AFNetworkingReachabilityNotificationStatusItem __NS_SYMBOL(AFNetworkingReachabilityNotificationStatusItem)
-#endif
-
-#ifndef AFURLResponseSerializationErrorDomain
-#define AFURLResponseSerializationErrorDomain __NS_SYMBOL(AFURLResponseSerializationErrorDomain)
-#endif
-
-#ifndef AFNetworkingOperationFailingURLResponseErrorKey
-#define AFNetworkingOperationFailingURLResponseErrorKey __NS_SYMBOL(AFNetworkingOperationFailingURLResponseErrorKey)
-#endif
-
-#ifndef AFNetworkingOperationFailingURLResponseDataErrorKey
-#define AFNetworkingOperationFailingURLResponseDataErrorKey __NS_SYMBOL(AFNetworkingOperationFailingURLResponseDataErrorKey)
-#endif
-
-#ifndef AFNetworkingTaskDidResumeNotification
-#define AFNetworkingTaskDidResumeNotification __NS_SYMBOL(AFNetworkingTaskDidResumeNotification)
-#endif
-
-#ifndef AFNetworkingTaskDidCompleteNotification
-#define AFNetworkingTaskDidCompleteNotification __NS_SYMBOL(AFNetworkingTaskDidCompleteNotification)
-#endif
-
-#ifndef AFNetworkingTaskDidSuspendNotification
-#define AFNetworkingTaskDidSuspendNotification __NS_SYMBOL(AFNetworkingTaskDidSuspendNotification)
-#endif
-
-#ifndef AFURLSessionDidInvalidateNotification
-#define AFURLSessionDidInvalidateNotification __NS_SYMBOL(AFURLSessionDidInvalidateNotification)
-#endif
-
-#ifndef AFURLSessionDownloadTaskDidFailToMoveFileNotification
-#define AFURLSessionDownloadTaskDidFailToMoveFileNotification __NS_SYMBOL(AFURLSessionDownloadTaskDidFailToMoveFileNotification)
-#endif
-
-#ifndef AFNetworkingTaskDidCompleteSerializedResponseKey
-#define AFNetworkingTaskDidCompleteSerializedResponseKey __NS_SYMBOL(AFNetworkingTaskDidCompleteSerializedResponseKey)
-#endif
-
-#ifndef AFNetworkingTaskDidCompleteResponseSerializerKey
-#define AFNetworkingTaskDidCompleteResponseSerializerKey __NS_SYMBOL(AFNetworkingTaskDidCompleteResponseSerializerKey)
-#endif
-
-#ifndef AFNetworkingTaskDidCompleteResponseDataKey
-#define AFNetworkingTaskDidCompleteResponseDataKey __NS_SYMBOL(AFNetworkingTaskDidCompleteResponseDataKey)
-#endif
-
-#ifndef AFNetworkingTaskDidCompleteErrorKey
-#define AFNetworkingTaskDidCompleteErrorKey __NS_SYMBOL(AFNetworkingTaskDidCompleteErrorKey)
-#endif
-
-#ifndef AFNetworkingTaskDidCompleteAssetPathKey
-#define AFNetworkingTaskDidCompleteAssetPathKey __NS_SYMBOL(AFNetworkingTaskDidCompleteAssetPathKey)
-#endif
-
-#ifndef AFURLRequestSerializationErrorDomain
-#define AFURLRequestSerializationErrorDomain __NS_SYMBOL(AFURLRequestSerializationErrorDomain)
-#endif
-
-#ifndef AFNetworkingOperationFailingURLRequestErrorKey
-#define AFNetworkingOperationFailingURLRequestErrorKey __NS_SYMBOL(AFNetworkingOperationFailingURLRequestErrorKey)
-#endif
-
-#ifndef kAFUploadStream3GSuggestedPacketSize
-#define kAFUploadStream3GSuggestedPacketSize __NS_SYMBOL(kAFUploadStream3GSuggestedPacketSize)
-#endif
-
-#ifndef kAFUploadStream3GSuggestedDelay
-#define kAFUploadStream3GSuggestedDelay __NS_SYMBOL(kAFUploadStream3GSuggestedDelay)
 #endif
 
 #ifndef JDNetApiSDKVendorVersionNumber

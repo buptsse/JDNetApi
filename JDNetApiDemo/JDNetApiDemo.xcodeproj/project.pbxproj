@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		47232B011DC236CE00F2B49E /* JDNetApiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A0C81C1DC22A6600B18C06 /* JDNetApiSDK.framework */; };
 		479415F61DB4EB7300B524FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 479415F51DB4EB7300B524FA /* main.m */; };
 		479415F91DB4EB7300B524FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 479415F81DB4EB7300B524FA /* AppDelegate.m */; };
 		479415FC1DB4EB7300B524FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 479415FB1DB4EB7300B524FA /* ViewController.m */; };
@@ -19,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4756BDE31DC2FF0500D0FF65 /* JDNetApiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JDNetApiSDK.framework; path = "../../../../Library/Developer/Xcode/DerivedData/JDNetApiWorkSpace-gteelwxvfsddwugsjoquypkvnjku/Build/Products/Debug-iphonesimulator/JDNetApiSDK.framework"; sourceTree = "<group>"; };
 		479415F11DB4EB7300B524FA /* JDNetApiDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDNetApiDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		479415F51DB4EB7300B524FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		479415F71DB4EB7300B524FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,7 +31,6 @@
 		479416051DB4EB7300B524FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47A0C5E21DC2195100B18C06 /* JDNetApiSDKVendor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDNetApiSDKVendor.h; sourceTree = "<group>"; };
 		47A0C5E31DC2195100B18C06 /* JDNetApiSDKVendor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDNetApiSDKVendor.m; sourceTree = "<group>"; };
-		47A0C81C1DC22A6600B18C06 /* JDNetApiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JDNetApiSDK.framework; path = "../../../../Library/Developer/Xcode/DerivedData/JDNetApiWorkSpace-gteelwxvfsddwugsjoquypkvnjku/Build/Products/Debug-iphonesimulator/JDNetApiSDK.framework"; sourceTree = "<group>"; };
 		47D9E0411DB510EC008357C6 /* BKCardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCardModel.h; sourceTree = "<group>"; };
 		47D9E0421DB510EC008357C6 /* BKCardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCardModel.m; sourceTree = "<group>"; };
 		47D9E0471DB5221D008357C6 /* BKCardResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCardResponseModel.h; sourceTree = "<group>"; };
@@ -43,7 +42,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47232B011DC236CE00F2B49E /* JDNetApiSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +102,7 @@
 		47A0C5D11DC1F37200B18C06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				47A0C81C1DC22A6600B18C06 /* JDNetApiSDK.framework */,
+				4756BDE31DC2FF0500D0FF65 /* JDNetApiSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -330,7 +328,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JDNetApiDemo",
-					"/Users/Adams/Library/Developer/Xcode/DerivedData/JDNetApiWorkSpace-gteelwxvfsddwugsjoquypkvnjku/Build/Products/Debug-iphonesimulator",
 				);
 				INFOPLIST_FILE = JDNetApiDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
